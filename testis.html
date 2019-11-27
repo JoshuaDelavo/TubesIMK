@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>            
+        input[type="text"]
+        {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            text-align: center;
+            left: 50%;
+            font-size: 35px;
+            height: 150px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+
+
+</head>
+<body>
+   <form action="" name="f1">
+       <input type="text" name="t1" id="" value="" readonly="" />
+       <br>
+       <input type="button" name="b1" value="Create Capthca" 
+       onclick="random()"/>
+   </form>
+</body>
+</html>
+
+<script>
+    function random(){
+    var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789qwertyuiopasdfghjklzxcvbnm";
+    var x = text[Math.floor(Math.random()* text.length)];
+    for(var i = 0;i<6;i++)
+    {
+        x = x+text[Math.floor(Math.random()* text.length)];
+    }
+    f1.t1.value=x;
+}
+</script>

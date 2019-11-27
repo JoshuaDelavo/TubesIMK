@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style/log.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+
+<body class="body">
+	
+	<div class="atas w3-cell-row w3-white ">
+        <img src="img/Annotation 2019-10-26 101447.png" alt="">
+        <p><i>Cara tercepat dan termudah untuk pembelian credit permainan</i></p>           
+    </div>
+
+<div class="login-page">
+  <div class="form">
+
+    <form name="f1">
+        <p style="text-align: center; font-size: 25px;">Sign Up</p> <br>
+        <input type="text" placeholder="&#xf007;  Username"/>
+        <input type="text" placeholder="&#xf007;  Email"/>
+      <input type="password" placeholder="&#xf023;  Password"/>
+      <input type="password" placeholder="&#xf023;  Confirm Password"/>
+      <br><br>
+      <input type="text" id="text" name="random" value="" readonly="" style="font-size: 45px; padding-bottom: 25px;"/> <br><br>
+      <button id="1" type="button" name="b1" value="Create Capthca" onclick="rand()" style="background-color: rgb(68, 163, 131);">Create Captcha</button> 
+      <br>
+      <button id="2" onclick="document.getElementById('id03').style.display='block'" style="background-color: rgb(69, 120, 187);">Play Sound</button>
+      <br>
+      <br>
+      <input class="w3-input w3-border w3-round-xxlarge" type="text" placeholder="Masukan Captcha..." name="" required>
+      <br>    
+      <button type="button" ><a href="homeUser.html">Sign Up</a></button>      
+    </form>
+
+    <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-black" style="max-width:400px">
+            <div class="w3-center"><br>
+                <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-xlarge w3-display-topright" title=""><i class="fa fa-close"></i></span>
+            </div>
+            <audio controls>
+                <source src="audio/voice_23627.aac" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+   function rand()
+       {
+         var text="QWERTYUIOPASDFGHJKLZXCVBNM0123456789qwertyuiopasdfghjklzxcvbnm";
+         var x = text[Math.floor(Math.random()* text.length)];
+          for(var i = 0;i<6;i++)
+             {
+                x = x+text[Math.floor(Math.random()* text.length)];
+             }
+            f1.random.value=x;
+       }
+</script>
