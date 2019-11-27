@@ -45,7 +45,7 @@
    <!-- Signup Modals-->
    <div id="SignModal" class="w3-modal ">
         <!-- Modal content -->
-        <form name="f1" class="w3-container w3-display-middle w3-round-large" style="background-color:rgb(182, 175, 175); width:500px; margin: auto">
+        <form name="f1" class="w3-container w3-display-middle w3-round-large" style="background-color:rgb(182, 175, 175); margin: 5% auto 5% auto; width: 40% ">
                 <button class="xbtn w3-right w3-round-large w3-orange" onclick="document.getElementById('SignModal').style.display='none'">&times;</button>
             <p>
                 <label>Username</label>
@@ -108,7 +108,8 @@
            
             <br>
             <p>
-                <button type="submit" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity" ><a href="homeUser.html">LogIn</a></button>
+                <!-- <button type="submit" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity" ><a href="homeUser.html">LogIn</a></button -->
+                  <Button type="submit" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity"><a href="homeUser.html" >LogIn</a></Button>
             </p>
         </form>
     </div>
@@ -145,7 +146,7 @@
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <!-- <ul class="navbar-nav mr-auto">
                     <li class="nav-item active w3-padding-left-16">
                       <a class="nav-link" href="#" style=" color: white;">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -169,7 +170,25 @@
                     <li class="nav-item w3-padding-left-16">
                             <a class="nav-link" href="report.html" style=" color: white;"> Report</a>
                           </li>
-                  </ul>
+                  </ul> -->
+                  <div class="w3-container" style="flex: 1">
+                    <div class="w3-bar">
+                      <a href="home.html" class="w3-bar-item w3-button" style="text-decoration: none;"> Home</a>
+                      <div class="w3-dropdown-hover">
+                        <button class="w3-button">Categories</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button">Action</a>
+                          <a href="#" class="w3-bar-item w3-button">Adventure</a>
+                          <a href="#" class="w3-bar-item w3-button">Simulation</a>
+                        </div>
+                      </div>
+                      <a href="voucher.html" class="w3-bar-item w3-button"> Voucher</a>
+                      <a href="aboutUs.html"class="w3-bar-item w3-button"> About Us</a>
+                      <a href="report.html"class="w3-bar-item w3-button"> Report</a>
+                      
+                      <!-- etc -->
+                    </div>
+                  </div>
                 </div>
               </nav>
     
