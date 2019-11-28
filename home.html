@@ -43,7 +43,7 @@
 <body id="home">
     
    <!-- Signup Modals-->
-   <div id="SignModal" class="w3-modal ">
+   <div id="SignModal" class="w3-modal w3-animate-zoom">
         <!-- Modal content -->
         <form name="f1" class="w3-container w3-display-middle w3-round-large" style="background-color:rgb(182, 175, 175); margin: 5% auto 5% auto; width: 40% ">
                 <button class="xbtn w3-right w3-round-large w3-orange" onclick="document.getElementById('SignModal').style.display='none'">&times;</button>
@@ -93,7 +93,7 @@
 
     <!-- Log In Modal -->
 
-    <div id="Logmod" class="w3-modal">
+    <div id="Logmod" class="w3-modal w3-animate-zoom">
         <!-- Modal content -->
         <form class="w3-container w3-display-middle w3-round-large" style="background-color:rgb(182, 175, 175); width:500px; margin: auto">
                 <button class="xbtn w3-right w3-round-large w3-orange" onclick="document.getElementById('Logmod').style.display='none'">&times;</button>
@@ -122,23 +122,7 @@
         <button id="signup" type="button" class="SignUp"><a>Sign Up</a></button>     
         <button id="login" type="button" class="Login"><a>Log In</a></button>
        
-    </div>
-    <!-- Nav Bar-->
-    <!-- <div class="navbar">
-        <a href="#home">Home</a>   
-        <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </div>
-            <a href="#news">Voucher</a>
-            <a href="#news">About Us</a>
-            <a href="#news">Report</a>
-          </div> -->
-    
+    </div>    
           <nav class="navbar navbar-expand-lg navbar-light bg-light w3-black">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,34 +130,9 @@
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <!-- <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active w3-padding-left-16">
-                      <a class="nav-link" href="#" style=" color: white;">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown w3-padding-left-16">
-                      <a class="nav-link dropdown-toggle" href="#" style=" color: white;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categories
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" >Action</a>
-                        <a class="dropdown-item" href="#" > Adventure</a>
-                        <a class="dropdown-item" href="#" >Simulation</a>
-                      </div>
-                    </li>
-                    <li class="nav-item w3-padding-left-16">
-                            <a id="texting" class="nav-link" href="#" style=" color: white;">Voucher</a>
-                            <button id="coution" type="button" onclick="alert()" style="display: none;">Tekan Aku</button>
-                          </li>
-                    <li class="nav-item w3-padding-left-16">
-                            <a class="nav-link" href="about1.html" style=" color: white;"> About Us</a>
-                          </li>
-                    <li class="nav-item w3-padding-left-16">
-                            <a class="nav-link" href="report.html" style=" color: white;"> Report</a>
-                          </li>
-                  </ul> -->
                   <div class="w3-container" style="flex: 1;width:20%;">
                     <div class="w3-bar">
-                      <a href="home.html" class="w3-bar-item w3-button"style="width:20%;" > Home</a>
+                      <a class="w3-bar-item w3-button homeBtn"style="width:20%;" > Home</a>
                       <div class="w3-dropdown-hover w3-center" style="width:20%;">
                       <button class="w3-button"  style="width:100%;"> Categories</button>
                         <div class="w3-dropdown-content w3-bar-block w3-card-3"  style="width:19.1%;">
@@ -183,7 +142,7 @@
                         </div>
                       </div>
                       <a href="voucher.html" class="w3-bar-item w3-button" style="width:20%;"> Voucher</a>
-                      <a href="aboutUs.html"class="w3-bar-item w3-button" style="width:20%;"> About Us</a>
+                      <a class="w3-bar-item w3-button aboutUsBtn" style="width:20%;"> About Us</a>
                       <a href="report.html"class="w3-bar-item w3-button" style="width:20%;"> Report</a>
                       
                       <!-- etc -->
@@ -192,11 +151,12 @@
                 </div>
               </nav>
     
-    	<!-- slide show-->
-	<div class="carousel-container">
-		<div class="images slides">
-			<img src="img/1.jpg" style="width: 100%" alt="">
-        </div>
+      <!-- slide show-->
+  
+	  <div class="carousel-container">
+		  <div class="images slides">
+			  <img src="img/1.jpg" style="width: 100%" alt="">
+          </div>
         
         <div class="images slides">
 			<img src="img/2.jpg" style="width: 100%" alt="">
@@ -376,7 +336,7 @@
                 <img src="img/v7.jpg" alt="">
           </div>
           <div class="nama">
-            <a href=""> Gamescool</a>
+            <a href=""> Gemscool</a>
            </div>
         </div>
         
@@ -389,31 +349,31 @@
            </div>
         </div>
       </div>
-
+    
     <!-- footer-->
         
     <footer>
         <h5>Costumer Support</h5>
         <div class="foot1">
             <h5>HotLine</h5>
-            <i class="w3-large  "><i class="fa fa-phone">082185658770</i></i>
+            <i class="w3-large  "><i class="fa fa-phone">082216769729</i></i>
         </div>
 
         <div class="foot2">
             <h5>Call Center</h5>
-            <i class="w3-large"><i class="fa fa-phone">081247651978</i></i>
+            <i class="w3-large"><i class="fa fa-phone">085265823716</i></i>
         </div>
 
         <div class="foot3">
             <h5>Message Us</h5>
-            <i class="w3-large"><i class="fa fa-envelope">plagiatCoda@gmail.com</i></i>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="w3-large fa fa-envelope">jdelavo@gmail.com</i></a>
         </div>
 
         <div class="foot4">
             <h5>Support Us</h5>
-            <i class="w3-large"><i class="fa fa-instagram"></i></i>
-            <i class="w3-large"><i class="fa fa-facebook"></i></i>
-            <i class="w3-large"><i class="fa fa-twitter"></i></i>
+            <a href="https://www.instagram.com/m.anggie.r/?hl=en"><i class="w3-large fa fa-instagram"></i></a>
+            <a href="https://web.facebook.com/mhdanggie.rinovka.9"><i class="w3-large fa fa-facebook"></i></a>
+            <a href="https://twitter.com/home"><i class="w3-large fa fa-twitter"></i></a>
         </div>
     </footer>
     
@@ -458,7 +418,18 @@
        {
           tombol.click();
        });
-
-
    </script>
+   <!-- <script>
+     $(document).ready(function(){
+      $(".aboutUsBtn").click(function(){
+        $(".homeContent").hide();
+        $(".aboutUs").show();
+      });
+      $(".homeBtn").click(function(){
+        $(".aboutUs").hide();
+        $(".homeContent").show();
+      });
+
+    });
+   </script> -->
 </html>
