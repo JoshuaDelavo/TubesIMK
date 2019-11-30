@@ -1,7 +1,14 @@
 * {
     box-sizing: border-box;
   }
-  
+  #tombol
+{
+    width: 25%;
+    margin-left: 38%;
+    border-radius: 15px;
+    background-color: rgb(184, 184, 184);
+}
+
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(241, 111, 23);
@@ -20,7 +27,7 @@ h3
 }
 #latar p
 {
-    color: rgb(191, 196, 190);
+    color: rgb(12, 12, 12);
 }
 
  .row
@@ -61,7 +68,7 @@ h3
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       max-width:400px;
       margin:auto;
-      background-color: rgb(137, 76, 177);
+      background-color: rgb(252, 252, 252);
       text-align:center;
       border-radius:40px;
       padding-bottom:15px;

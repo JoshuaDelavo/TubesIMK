@@ -19,6 +19,13 @@
   margin-top: 30px;
   margin-right:10px;
 }
+#logout{
+  float: right;
+  border: none;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-right:10px;
+}
 #signup{
   border: none;
   border-radius: 12px;
