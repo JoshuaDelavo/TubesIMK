@@ -158,9 +158,9 @@
                   <div class="w3-dropdown-hover w3-center" style="width:20%;">
                   <button class="w3-button"  style="width:100%;"> Categories</button>
                     <div class="w3-dropdown-content w3-bar-block w3-card-3"  style="width:19.1%;">
-                      <a href="#" class="w3-bar-item w3-button ">Action</a>
-                      <a href="#" class="w3-bar-item w3-button ">Adventure</a>
-                      <a href="#" class="w3-bar-item w3-button ">Simulation</a>
+                      <a type="button" class="action w3-bar-item w3-button ">Action</a>
+                      <a type="button" class="adventure w3-bar-item w3-button ">Adventure</a>
+                      <a type="button" class="simulation w3-bar-item w3-button ">Simulation</a>
                     </div>
                   </div>
                   <a href="voucher.html" class="w3-bar-item w3-button" style="width:20%;"> Voucher</a>
@@ -217,6 +217,7 @@
     <div class="title">Top-Up Game</div>
 
     <!--gambar sementara-->
+    <div id="gambarAwal">
     <div class="row">
             <div class="column ">
               <div id="action" class="card">
@@ -292,7 +293,116 @@
                </div>
             </div>
           </div>
+        </div>
 
+
+        <!-- kategori nya -->
+      <div id="gambarAction" style="display: none;">
+        <div class="row">
+          <div class="column ">
+            <div id="action" class="card">
+              <img src="img/1c.jpg" alt="">
+            </div>
+            <div class="nama">
+             <a href=""> Mobile Legend</a>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div id="action shooter" class="card">
+                  <img src="img/2c.jpg" alt="">
+            </div>
+            <div class="nama">
+              <a href=""> Free Fire</a>
+             </div>
+          </div>
+          
+          <div id="shooter" class="column">
+            <div id="action shooter" class="card">
+                  <img src="img/3c.jpg" alt="">
+            </div>
+            <div class="nama">
+              <a href=""> Call Of Duty Mobile</a>
+             </div>
+          </div>
+          
+          <div class="column">
+            <div id="action shooter" class="card">
+                  <img src="img/4c.jpg" alt="">
+            </div>
+            <div class="nama">
+              <a href=""> PUBG Mobile</a>
+             </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="gambarAdventure"style="display: none;">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                    <img src="img/5c.png" alt="">
+              </div>
+              <div class="nama">
+                <a href=""> Mobile Legend Adventure</a>
+               </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                    <img src="img/6c.png" alt="">
+              </div>
+              <div class="nama">
+                <a href=""> Honkai Impact 3</a>
+               </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                    <img src="img/8c.jpg" alt="">
+              </div>
+              <div class="nama">
+                <a href=""> Legacy of Discord</a>
+               </div>
+            </div>
+      </div>
+      </div>
+
+      <div id="gambarSimulation"style="display: none;">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                  <img src="img/8c+.jpg" alt="">
+            </div>
+            <div class="nama">
+              <a href=""> Game of Sultans</a>
+             </div>
+          </div>
+      </div>
+      </div>
+      <script>
+          $(document).ready(function(){
+            $(".action").click(function(){
+               $("#gambarAction").show();
+               $("#gambarAdventure").hide();
+               $("#gambarSimulation").hide();
+               $("#gambarAwal").hide();
+            });
+            $(".adventure").click(function(){
+               $("#gambarAction").hide();
+               $("#gambarAdventure").show();
+               $("#gambarSimulation").hide();
+               $("#gambarAwal").hide();
+            });
+            $(".simulation").click(function(){
+               $("#gambarAction").hide();
+               $("#gambarAdventure").hide();
+               $("#gambarSimulation").show();
+               $("#gambarAwal").hide();
+            });
+          });
+        </script>
             <!--Code Voucher-->
         <div class="title">Code Voucher</div>
            <!--gambar sementara-->
