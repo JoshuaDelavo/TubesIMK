@@ -237,7 +237,23 @@ h4
 }
 
 
-.title
+.titleVoucher
+{
+
+  padding-top: 10px;
+  padding-left: 26%;
+  font-size: 20px;
+  color: white;
+}
+.titleTop
+{
+
+  padding-top: 10px;
+  padding-left: 26%;
+  font-size: 20px;
+  color: white;
+}
+.titleCode
 {
 
   padding-top: 10px;
@@ -266,4 +282,70 @@ h4
 {
   
   width: 100%;
+}
+.row 
+{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.row 
+{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.rowKategori
+{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* Clear floats after the columns */
+.rowKategori:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnKategori {
+  float: left;
+  width: 25%;
+  padding: 25px 10px 10px 15px;
+}
+@media screen and (max-width: 600px) {
+  .columnKategori {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.namaKategori
+{
+
+  text-align: center;
+  text-transform: none;
+  padding-top: 10px;
+  font-size: 15px;
+  color: white;
+}
+.namaKategori a:hover
+{
+  text-decoration: none;
+  color: white;
+}
+.cardKategori
+{
+  transition: 0.5s;
+
+}
+
+.cardKategori image
+{
+  border-radius: 15px;
+}
+
+.cardKategori:hover
+{
+  transform: scale(1.1);
 }
