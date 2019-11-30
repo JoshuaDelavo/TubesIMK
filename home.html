@@ -99,17 +99,17 @@
                 <button class="xbtn w3-right w3-round-large w3-orange" onclick="document.getElementById('Logmod').style.display='none'">&times;</button>
             <p>
                 <label>Username</label>
-                <input class="w3-input" type="text" required>
+                <input class="username w3-input" type="text" required>
             </p>
             <p>
                 <label>Password</label>
-                <input class="w3-input" type="text" required>
+                <input class="w3-input" type="password" required>
             </p>
            
             <br>
             <p>
                 <!-- <button type="submit" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity" ><a href="homeUser.html">LogIn</a></button -->
-                  <Button type="submit" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity"><a href="homeUser.html" >LogIn</a></Button>
+                  <Button type="button" class="SignUp_btn w3-orange w3-round-xlarge w3-border-0 w3-padding-16 w3-hover-opacity">LogIn</Button>
             </p>
         </form>
     </div>
@@ -121,35 +121,58 @@
         <p><i>Cara tercepat dan termudah untuk pembelian credit permainan</i></p>    
         <button id="signup" type="button" class="SignUp"><a>Sign Up</a></button>     
         <button id="login" type="button" class="Login"><a>Log In</a></button>
-       
-    </div>    
+        <button id="logout" type="button" style="display: none;"><a>Log Out</a></button>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".SignUp_btn").click(function(){
+          if($(".username").val()!=""){
+            $("#signup").hide();
+            $("#login").hide();
+            $("#logout").show();
+            $("#Logmod").hide();
+          }
+
+        });
+        $("#logout").click(function(){
+          if($(".username").val()!=""){
+            $("#signup").show();
+            $("#login").show();
+            $("#logout").hide();
+            $("#Logmod").hide();
+          }
+
+        });
+
+      });
+    </script>    
           <nav class="navbar navbar-expand-lg navbar-light bg-light w3-black">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <div class="w3-container" style="flex: 1;width:20%;">
-                    <div class="w3-bar">
-                      <a class="w3-bar-item w3-button homeBtn"style="width:20%;" > Home</a>
-                      <div class="w3-dropdown-hover w3-center" style="width:20%;">
-                      <button class="w3-button"  style="width:100%;"> Categories</button>
-                        <div class="w3-dropdown-content w3-bar-block w3-card-3"  style="width:19.1%;">
-                          <a href="#" class="w3-bar-item w3-button ">Action</a>
-                          <a href="#" class="w3-bar-item w3-button ">Adventure</a>
-                          <a href="#" class="w3-bar-item w3-button ">Simulation</a>
-                        </div>
-                      </div>
-                      <a href="voucher.html" class="w3-bar-item w3-button" style="width:20%;"> Voucher</a>
-                      <a class="w3-bar-item w3-button aboutUsBtn" style="width:20%;"> About Us</a>
-                      <a href="report.html"class="w3-bar-item w3-button" style="width:20%;"> Report</a>
-                      
-                      <!-- etc -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="w3-container" style="flex: 1;width:20%;">
+                <div class="w3-bar">
+                  <a href="home.html" class="w3-bar-item w3-button homeBtn"style="width:20%;" > Home</a>
+                  <div class="w3-dropdown-hover w3-center" style="width:20%;">
+                  <button class="w3-button"  style="width:100%;"> Categories</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-3"  style="width:19.1%;">
+                      <a href="#" class="w3-bar-item w3-button ">Action</a>
+                      <a href="#" class="w3-bar-item w3-button ">Adventure</a>
+                      <a href="#" class="w3-bar-item w3-button ">Simulation</a>
                     </div>
                   </div>
+                  <a href="voucher.html" class="w3-bar-item w3-button" style="width:20%;"> Voucher</a>
+                  <a href="aboutUs.html" class="w3-bar-item w3-button aboutUsBtn" style="width:20%;"> About Us</a>
+                  <a href="report.html"class="w3-bar-item w3-button" style="width:20%;"> Report</a>
+                  
+                  <!-- etc -->
                 </div>
-              </nav>
+              </div>
+            </div>
+          </nav>
     
       <!-- slide show-->
   
@@ -371,9 +394,9 @@
 
         <div class="foot4">
             <h5>Support Us</h5>
-            <a href="https://www.instagram.com/m.anggie.r/?hl=en"><i class="w3-large fa fa-instagram"></i></a>
-            <a href="https://web.facebook.com/mhdanggie.rinovka.9"><i class="w3-large fa fa-facebook"></i></a>
-            <a href="https://twitter.com/home"><i class="w3-large fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/codashop.idofficial/"><i class="w3-large fa fa-instagram"></i></a>
+            <a href="https://web.facebook.com/Codashop.IDofficial/?brand_redir=599999323850868"><i class="w3-large fa fa-facebook"></i></a>
+            <a href="https://twitter.com/Codashop_ID"><i class="w3-large fa fa-twitter"></i></a>
         </div>
     </footer>
     
@@ -384,15 +407,14 @@
 <script>
 
         $(document).ready(function(){
-
-   //jquery
-   $(".Login").click(function(){
-    $("#Logmod").show();
-       });
-   $(".SignUp").click(function(){
-        $("#SignModal").show();
+          //jquery
+           $(".Login").click(function(){
+            $("#Logmod").show();
+          });
+        $(".SignUp").click(function(){
+          $("#SignModal").show();
            });
-       });
+        });
 
         //capthca
        function rand()
@@ -419,17 +441,4 @@
           tombol.click();
        });
    </script>
-   <!-- <script>
-     $(document).ready(function(){
-      $(".aboutUsBtn").click(function(){
-        $(".homeContent").hide();
-        $(".aboutUs").show();
-      });
-      $(".homeBtn").click(function(){
-        $(".aboutUs").hide();
-        $(".homeContent").show();
-      });
-
-    });
-   </script> -->
 </html>
