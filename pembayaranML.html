@@ -1,13 +1,4 @@
 <html lang="en"><head>
-    
-
-
-
-
-
-
-
-
         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/916139058437464?v=2.9.14&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PF7TJ9"></script><script type="text/javascript" src="https://cdn1.codashop.com/S/content/common/js/xss.min.js"></script>
         <link rel="stylesheet" href="Style/stylePembayaran.css">
         <!-- Google Tag Manager -->
@@ -211,38 +202,8 @@
         <div class="container product-container">
         
             <section class="product-details-container">
-                <div class="product-top-banner__container"><img src="https://cdn1.codashop.com/S/content/common/images/mno/mobilelegends_640x241.jpg" alt="" class="product__top-banner"></div>
-                    
+                <div class="product-top-banner__container"><img src="https://cdn1.codashop.com/S/content/common/images/mno/mobilelegends_640x241.jpg" alt="" class="product__top-banner"></div>    
                 <div class="product__name">Mobile Legends</div>
-                <input type="checkbox" id="product-description" name="product-description" class="product-description-checkbox">
-                <label for="product-description">Baca lebih lanjut</label>
-                <div class="product__description"><span> Produk lainnya ⇒ </span> 
-        
-        <a href="https://www.codashop.com/id/mobile-legends-member/" style="background: none; text-decoration: underline !important; color: blue; padding: 0 0 0 0; float: unset;">Starlight Member</a>,
-        
-        <a href="https://www.codashop.com/id/mobile-legends-special-bundle-a" style="background: none; text-decoration: underline !important; color: blue; padding: 0 0 0 0;;float: unset;">Special Bundle A</a>,
-        
-        <a href="https://www.codashop.com/id/mobile-legends-special-bundle-b" style="background: none; text-decoration: underline !important; color: blue; padding: 0 0 0 0;float: unset;">Special Bundle B</a>,
-        
-        <a href="https://www.codashop.com/id/mobile-legends-twilight-pass" style="background: none; text-decoration: underline !important; color: blue; padding: 0 0 0 0; float: unset;">Twilight Pass</a>. <br>
-        
-        Top up diamonds Mobile Legends: Bang Bang dengan mudah dan murah! <br><br>
-        
-        Solusi Pembayaran untuk iOS dan Android. Beli diamonds Mobile Legends untuk region Indonesia dan bayarlah menggunakan GoPay, Dana, OVO, Telkomsel, Indosat, Tri, XL, Bank Transfer, Indomaret, Alfamart, Kredivo, TrueMoney Indonesia, Kartu Kredit dan Doku Wallet. <br><br>
-        
-        Cukup masukan ID, pilih nominal yang diinginkan, lakukan pembayaran, lalu Diamonds / Starlight Member / Twilight Pass akan bertambah langsung ke akun Mobile Legends Anda setelah pembayaran berhasil.<br><br>
-        
-        Codashop adalah cara terbaik untuk membeli diamonds secara online tanpa kartu kredit! <br><br>
-        
-        
-        Unduh Mobile Legends sekarang!<br>
-        
-        <a href="https://apple.co/2Uneg6D" style="padding: 0 0 0 0;">
-        <img style="width:86px; padding-top: 5px;" src="https://d1qgcmfii0ptfa.cloudfront.net/S/content/mobile/images/app_store_coda.png" alt="Download on the App Store"></a>
-        
-        <a href="https://bit.ly/2MHXmgw" style="padding: 0 0 0 0;">
-        <img style="width:86px; padding-top: 5px;" src="https://d1qgcmfii0ptfa.cloudfront.net/S/content/mobile/images/google_play_coda.png" alt="Download on Google Play"></a>
-        </div>
             </section>
                     <main id="contents" class="main-content">
                         <!-- contents.s -->
@@ -408,6 +369,189 @@
                                 </li>
             </ul>
             
+             <!-- harga -->
+            <br>
+            <br>
+             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" >
+                <div id="name-div" class="mdc-text-field text-field mdc-text-field--outlined margin-width email-focused" data-mdc-auto-init="MDCTextField">
+                    
+                    <button type="button" id="tambah" onclick="tambahi()">+</button>
+                    <p id="price" style="margin-left: 40%; font-size: 30px; margin-top: 1.5%;" >0</p>
+                        <input type="text" id="email diskon" name="name" class="mdc-text-field__input" value=""  hidden/>
+                        
+                    <button type="button" id="kurang" onclick="kurangi()">-</button>
+                        
+                    
+                    
+                    <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- script harga -->
+            <script>
+                var kurang = document.getElementById("kurang");
+                var tambah = document.getElementById("tambah");
+                var harga = 0;
+                var ct =  0;
+                var price = document.getElementById("price");
+                var tertulis = document.getElementById("diskon");
+                 function cost (id)
+                 {
+                        if(id=="1")
+                            {
+                                ct=1;
+                                harga+=15000;
+                                price.innerHTML=harga;
+                                // document.getElementById("diskon").value=harga
+
+                            }
+                        if(id=="2")
+                            {
+                                ct=2;
+                                harga+=35000;
+                                price.innerHTML=harga;
+                                // tertulis.value=harga;
+                            }
+                        if(id=="3")
+                            {
+                                ct=3;
+                                harga+=54000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(id=="4")
+                            {
+                                ct=4;
+                                harga+=876000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(id=="5")
+                            {
+                                ct=5;
+                                harga+=2350000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                         if(id=="6")
+                            {
+                                ct=6;
+                                harga+=2870000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                 }
+
+                 function tambahi()
+                 {
+                    if(tambah.click)
+                    {
+                        if(ct=="1")
+                            {
+                               
+                                harga+=15000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+
+                            }
+                        if(ct=="2")
+                            {
+                                
+                                harga+=35000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="3")
+                            {
+                               
+                                harga+=54000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="4")
+                            {
+                               
+                                harga+=876000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="5")
+                            {
+                                
+                                harga+=2350000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                         if(ct=="6")
+                            {
+                               
+                                harga+=2870000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                    }
+                 }
+
+                 function kurangi()
+                 {
+                    if(kurang.click)
+                    {
+                        if(harga>0)
+                        {   
+                            if(ct=="1")
+                            {
+                                
+                                harga-=15000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="2")
+                            {
+                                
+                                harga-=35000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="3")
+                            {
+                                
+                                harga-=54000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="4")
+                            {
+                                
+                                harga-=876000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        if(ct=="5")
+                            {
+                               
+                                harga-=2350000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                         if(ct=="6")
+                            {
+                                
+                                harga-=2870000;
+                                price.innerHTML=harga;
+                                // tertulis.value(price);
+                            }
+                        }
+                    }
+                 }
+
+            </script>
+
         </div>
         
         <script type="text/javascript">
@@ -420,16 +564,8 @@
                 $(this).html(tempText);
             });
         </script>
-        
                         
-        
-        
-        
-        
-        
-        
-        
-        
+
         <div class="section payment">
             <h2 class="circle">
                 
@@ -548,7 +684,7 @@
                         </li>
             </ul>
         </div>
-        
+
         <div class="section buy">
             <h2 class="circle">
                 
@@ -579,192 +715,14 @@
                         </div>
                     </div> <br>
 
-                    <!-- harga -->
-
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-                        <div id="name-div" class="mdc-text-field text-field mdc-text-field--outlined margin-width email-focused" data-mdc-auto-init="MDCTextField">
-                            
-                            <button type="button" id="tambah" onclick="tambahi()">+</button>
-                            <p id="price" style="margin-left: 25%; font-size: 30px; margin-top: 1.5%;" >0</p>
-                                <input type="text" id="email diskon" name="name" class="mdc-text-field__input" value=""  hidden/>
-                                
-                            <button type="button" id="kurang" onclick="kurangi()">-</button>
-                                
-                            
-                            
-                            <div class="mdc-notched-outline mdc-notched-outline--upgraded">
-                                <div class="mdc-notched-outline__leading"></div>
-                                <div class="mdc-notched-outline__notch">
-                                    
-                                </div>
-                                <div class="mdc-notched-outline__trailing"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- script harga -->
-                    <script>
-                        var kurang = document.getElementById("kurang");
-                        var tambah = document.getElementById("tambah");
-                        var harga = 0;
-                        var ct =  0;
-                        var price = document.getElementById("price");
-                        var tertulis = document.getElementById("diskon");
-                         function cost (id)
-                         {
-                                if(id=="1")
-                                    {
-                                        ct=1;
-                                        harga+=15000;
-                                        price.innerHTML=harga;
-                                        // document.getElementById("diskon").value=harga
-
-                                    }
-                                if(id=="2")
-                                    {
-                                        ct=2;
-                                        harga+=35000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value=harga;
-                                    }
-                                if(id=="3")
-                                    {
-                                        ct=3;
-                                        harga+=54000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(id=="4")
-                                    {
-                                        ct=4;
-                                        harga+=876000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(id=="5")
-                                    {
-                                        ct=5;
-                                        harga+=2350000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                 if(id=="6")
-                                    {
-                                        ct=6;
-                                        harga+=2870000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                         }
-
-                         function tambahi()
-                         {
-                            if(tambah.click)
-                            {
-                                if(ct=="1")
-                                    {
-                                       
-                                        harga+=15000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-
-                                    }
-                                if(ct=="2")
-                                    {
-                                        
-                                        harga+=35000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="3")
-                                    {
-                                       
-                                        harga+=54000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="4")
-                                    {
-                                       
-                                        harga+=876000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="5")
-                                    {
-                                        
-                                        harga+=2350000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                 if(ct=="6")
-                                    {
-                                       
-                                        harga+=2870000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                            }
-                         }
-
-                         function kurangi()
-                         {
-                            if(kurang.click)
-                            {
-                                if(harga>0)
-                                {   
-                                    if(ct=="1")
-                                    {
-                                        
-                                        harga-=15000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="2")
-                                    {
-                                        
-                                        harga-=35000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="3")
-                                    {
-                                        
-                                        harga-=54000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="4")
-                                    {
-                                        
-                                        harga-=876000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                if(ct=="5")
-                                    {
-                                       
-                                        harga-=2350000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                 if(ct=="6")
-                                    {
-                                        
-                                        harga-=2870000;
-                                        price.innerHTML=harga;
-                                        // tertulis.value(price);
-                                    }
-                                }
-                            }
-                         }
-
-                    </script>
 
                     <!-- '' -->
 
                     <div class="email-form-btn-group">
-                        <button onclick="myFunction()" id="mdn-submit bayar" class="mdc-button mdc-button--raised mdc-ripple-upgraded margin-width"><img id="submit-loader" src="https://cdn1.codashop.com/S/content/mobile/images/spinner-25x25.gif" alt="">Beli sekarang</button>
+                        <button onclick="myFunction()" id="mdn-submit bayar" class="mdc-button mdc-button--raised mdc-ripple-upgraded margin-width">
+                            <img id="submit-loader" src="https://cdn1.codashop.com/S/content/mobile/images/spinner-25x25.gif" alt="">
+                                Beli sekarang
+                        </button>
                         <div class="mdc-form-field">
                             <div id="mdc-cb" class="mdc-checkbox">
                                 <input type="checkbox" class="mdc-checkbox__native-control" id="ck1">
@@ -789,14 +747,6 @@
             <input type="hidden" id="id_no">
         
         </div>
-        
-        
-                        
-        
-        
-        
-        
-        
         
         <div class="popError" style="display: none;">
             <div class="section">
@@ -1065,4 +1015,4 @@
             </ul>
         </div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="confirm-user-dialog__btn btn-cancel ui-button ui-corner-all ui-widget">Batalkan</button><button type="button" class="confirm-user-dialog__btn btn-blue ui-button ui-corner-all ui-widget">Konfirm</button></div></div></div>
         <script type="text/javascript" id="">var OneSignal=window.OneSignal||[];OneSignal.push(function(){OneSignal.init({appId:"be1fff86-b0fd-492f-ac41-20c2caf3ba85"})});</script>
-          <script type="text/javascript" id="">OneSignal.push(function(){OneSignal.on("subscriptionChange",function(a){console.log("The user's subscription state is now:",a);!0===a&&OneSignal.sendTags({sub_url:window.location.href,country:window.location.pathname,gvt:"19",topic:"tags"}).then(function(a){console.log("tagsSent: "+JSON.stringify(a))})})});</script><iframe src="https://onesignal.com/webPushAnalytics" style="display: none;"></iframe><div id="onesignal-bell-container" class="onesignal-bell-container onesignal-reset onesignal-bell-container-bottom-left"><div id="onesignal-bell-launcher" class="onesignal-bell-launcher onesignal-bell-launcher-sm onesignal-bell-launcher-bottom-left onesignal-bell-launcher-theme-default onesignal-bell-launcher-active" style="bottom: 15px; left: 15px;"><div class="onesignal-bell-launcher-button"><svg class="onesignal-bell-svg" xmlns="http://www.w3.org/2000/svg" width="99.7" height="99.7" viewBox="0 0 99.7 99.7" style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0.35));;"><circle class="background" cx="49.9" cy="49.9" r="49.9" style="fill: rgb(255, 114, 0);"></circle><path class="foreground" d="M50.1 66.2H27.7s-2-.2-2-2.1c0-1.9 1.7-2 1.7-2s6.7-3.2 6.7-5.5S33 52.7 33 43.3s6-16.6 13.2-16.6c0 0 1-2.4 3.9-2.4 2.8 0 3.8 2.4 3.8 2.4 7.2 0 13.2 7.2 13.2 16.6s-1 11-1 13.3c0 2.3 6.7 5.5 6.7 5.5s1.7.1 1.7 2c0 1.8-2.1 2.1-2.1 2.1H50.1zm-7.2 2.3h14.5s-1 6.3-7.2 6.3-7.3-6.3-7.3-6.3z" style="fill: rgb(255, 255, 255);"></path><ellipse class="stroke" cx="49.9" cy="49.9" rx="37.4" ry="36.9" style="stroke: rgb(255, 255, 255);"></ellipse></svg></div><div class="onesignal-bell-launcher-badge" style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0));;"></div><div class="onesignal-bell-launcher-message"><div class="onesignal-bell-launcher-message-body"></div></div><div class="onesignal-bell-launcher-dialog" style="filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));; -webkit-filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));;"><div class="onesignal-bell-launcher-dialog-body"></div></div></div></div></body></html>
+          <script type="text/javascript" id="">OneSignal.push(function(){OneSignal.on("subscriptionChange",function(a){console.log("The user's subscription state is now:",a);!0===a&&OneSignal.sendTags({sub_url:window.location.href,country:window.location.pathname,gvt:"19",topic:"tags"}).then(function(a){console.log("tagsSent: "+JSON.stringify(a))})})});</script><iframe src="https://onesignal.com/webPushAnalytics" style="display: none;"></iframe><div id="onesignal-bell-container" class="onesignal-bell-container onesignal-reset onesignal-bell-container-bottom-left"><div id="onesignal-bell-launcher" class="onesignal-bell-launcher onesignal-bell-launcher-sm onesignal-bell-launcher-bottom-left onesignal-bell-launcher-theme-default onesignal-bell-launcher-active" style="bottom: 15px; left: 15px;"><div class="onesignal-bell-launcher-button"><path class="foreground" d="M50.1 66.2H27.7s-2-.2-2-2.1c0-1.9 1.7-2 1.7-2s6.7-3.2 6.7-5.5S33 52.7 33 43.3s6-16.6 13.2-16.6c0 0 1-2.4 3.9-2.4 2.8 0 3.8 2.4 3.8 2.4 7.2 0 13.2 7.2 13.2 16.6s-1 11-1 13.3c0 2.3 6.7 5.5 6.7 5.5s1.7.1 1.7 2c0 1.8-2.1 2.1-2.1 2.1H50.1zm-7.2 2.3h14.5s-1 6.3-7.2 6.3-7.3-6.3-7.3-6.3z" style="fill: rgb(255, 255, 255);"></path><ellipse class="stroke" cx="49.9" cy="49.9" rx="37.4" ry="36.9" style="stroke: rgb(255, 255, 255);"></ellipse></svg></div><div class="onesignal-bell-launcher-badge" style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0));;"></div><div class="onesignal-bell-launcher-message"><div class="onesignal-bell-launcher-message-body"></div></div><div class="onesignal-bell-launcher-dialog" style="filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));; -webkit-filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));;"><div class="onesignal-bell-launcher-dialog-body"></div></div></div></div></body></html>
