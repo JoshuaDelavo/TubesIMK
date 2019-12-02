@@ -358,53 +358,53 @@
             </h2>
             <ul class="vocherSelectionList ul-denoms voucher-denom-container">         
                                 <li id="denomination_1543" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(1543,-1624509378,false);">
+                                    <button onclick="cost(id)" type="button" id="1" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
                                             <span class="element-check-label"> L </span>
                                         
                                         3 Diamonds
-                                    </a>
+                                    </button>
                                 </li>
                                 <li id="denomination_250" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(250,-1624509378,false);">
+                                    <button onclick="cost(id)" type="button" id="2" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
-                                            <span class="element-check-label"> L </span>
-                                        
-                                        5 Diamonds
-                                    </a>
+                                        <span class="element-check-label"> L </span>
+                                    
+                                    5 Diamonds
+                                </button>
                                 </li>
                                 
                                 <li id="denomination_251" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(251,-1624509378,false);">
+                                   <button onclick="cost(id)" type="button" id="3" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
                                             <span class="element-check-label"> L </span>
                                         
                                         12 Diamonds
-                                    </a>
+                                    </button>
                                 </li>
                                 <li id="denomination_252" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(252,-1624509378,false);">
+                                    <button onclick="cost(id)" type="button" id="4" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
-                                            <span class="element-check-label"> L </span>
-                                        
-                                        19 Diamonds
-                                    </a>
+                                        <span class="element-check-label"> L </span>
+                                    
+                                    19 Diamonds
+                                </button>
                                 </li>
                                 <li id="denomination_191" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(191,-1624509378,false);">
+                                    <button onclick="cost(id)" type="button" id="5" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
-                                            <span class="element-check-label"> L </span>
-                                        
-                                        28 Diamonds
-                                    </a>
+                                        <span class="element-check-label"> L </span>
+                                    
+                                    28 Diamonds
+                                </button>
                                 </li>
                                 <li id="denomination_208" class="voucher-list-element">
-                                    <a href="javascript:CODA.Shop.selectedPaymentChannelId=null;selectDenom(208,-1624509378,false);">
+                                    <button onclick="cost(id)" type="button" id="6" style="border: none; border-radius: 25px; padding: 35px; margin-left:50px">
                                         
-                                            <span class="element-check-label"> L </span>
-                                        
-                                        44 Diamonds
-                                    </a>
+                                        <span class="element-check-label"> L </span>
+                                    
+                                    44 Diamonds
+                                </button>
                                 </li>
             </ul>
             
@@ -560,7 +560,8 @@
                 
                     <p class="emailOptional">Optional: Jika anda ingin mendapatkan bukti pembayaran atas pembelian anda, harap mengisi alamat emailnya</p>
                 
-                
+                    <!-- email -->
+
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
                         <div id="name-div" class="mdc-text-field text-field mdc-text-field--outlined margin-width email-focused" data-mdc-auto-init="MDCTextField">
                             
@@ -576,9 +577,194 @@
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>
                         </div>
+                    </div> <br>
+
+                    <!-- harga -->
+
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                        <div id="name-div" class="mdc-text-field text-field mdc-text-field--outlined margin-width email-focused" data-mdc-auto-init="MDCTextField">
+                            
+                            <button type="button" id="tambah" onclick="tambahi()">+</button>
+                            <p id="price" style="margin-left: 25%; font-size: 30px; margin-top: 1.5%;" >0</p>
+                                <input type="text" id="email diskon" name="name" class="mdc-text-field__input" value=""  hidden/>
+                                
+                            <button type="button" id="kurang" onclick="kurangi()">-</button>
+                                
+                            
+                            
+                            <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__notch">
+                                    
+                                </div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- script harga -->
+                    <script>
+                        var kurang = document.getElementById("kurang");
+                        var tambah = document.getElementById("tambah");
+                        var harga = 0;
+                        var ct =  0;
+                        var price = document.getElementById("price");
+                        var tertulis = document.getElementById("diskon");
+                         function cost (id)
+                         {
+                                if(id=="1")
+                                    {
+                                        ct=1;
+                                        harga+=15000;
+                                        price.innerHTML=harga;
+                                        // document.getElementById("diskon").value=harga
+
+                                    }
+                                if(id=="2")
+                                    {
+                                        ct=2;
+                                        harga+=35000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value=harga;
+                                    }
+                                if(id=="3")
+                                    {
+                                        ct=3;
+                                        harga+=54000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(id=="4")
+                                    {
+                                        ct=4;
+                                        harga+=876000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(id=="5")
+                                    {
+                                        ct=5;
+                                        harga+=2350000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                 if(id=="6")
+                                    {
+                                        ct=6;
+                                        harga+=2870000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                         }
+
+                         function tambahi()
+                         {
+                            if(tambah.click)
+                            {
+                                if(ct=="1")
+                                    {
+                                       
+                                        harga+=15000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+
+                                    }
+                                if(ct=="2")
+                                    {
+                                        
+                                        harga+=35000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="3")
+                                    {
+                                       
+                                        harga+=54000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="4")
+                                    {
+                                       
+                                        harga+=876000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="5")
+                                    {
+                                        
+                                        harga+=2350000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                 if(ct=="6")
+                                    {
+                                       
+                                        harga+=2870000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                            }
+                         }
+
+                         function kurangi()
+                         {
+                            if(kurang.click)
+                            {
+                                if(harga>0)
+                                {   
+                                    if(ct=="1")
+                                    {
+                                        
+                                        harga-=15000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="2")
+                                    {
+                                        
+                                        harga-=35000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="3")
+                                    {
+                                        
+                                        harga-=54000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="4")
+                                    {
+                                        
+                                        harga-=876000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                if(ct=="5")
+                                    {
+                                       
+                                        harga-=2350000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                 if(ct=="6")
+                                    {
+                                        
+                                        harga-=2870000;
+                                        price.innerHTML=harga;
+                                        // tertulis.value(price);
+                                    }
+                                }
+                            }
+                         }
+
+                    </script>
+
+                    <!-- '' -->
+
                     <div class="email-form-btn-group">
-                        <a href="javascript:submitRequest();" id="mdn-submit" class="mdc-button mdc-button--raised mdc-ripple-upgraded margin-width"><img id="submit-loader" src="https://cdn1.codashop.com/S/content/mobile/images/spinner-25x25.gif" alt="">Beli sekarang</a>
+                        <button onclick="myFunction()" id="mdn-submit bayar" class="mdc-button mdc-button--raised mdc-ripple-upgraded margin-width"><img id="submit-loader" src="https://cdn1.codashop.com/S/content/mobile/images/spinner-25x25.gif" alt="">Beli sekarang</button>
                         <div class="mdc-form-field">
                             <div id="mdc-cb" class="mdc-checkbox">
                                 <input type="checkbox" class="mdc-checkbox__native-control" id="ck1">
@@ -592,6 +778,13 @@
                             <label for="ck1">Ingat saya</label>
                         </div>
                     </div>
+                    <script>
+                        function myFunction()
+                        {
+                            alert("Terima Kasih Silahkan berkunjung kembali");
+                        }
+                    </script>
+
                 </div>
             <input type="hidden" id="id_no">
         
